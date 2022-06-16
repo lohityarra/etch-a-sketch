@@ -1,0 +1,129 @@
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#F94C66, white);
+  }
+  .board {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    border: 5px solid;
+    margin-bottom: 30px;
+  }
+
+  .board:hover {
+    cursor: pointer;
+  }
+  .content {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+  }
+  .title {
+      margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 50px;
+  }
+  .buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+ 
+
+
+  button {
+    
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .blackButton {
+    background-color: black;
+    color: white;
+  }
+  .blackButton:hover {
+    background-color: white;
+    color: black;
+  }
+  .grayButton {
+    background-color: rgba(128, 128, 128, 0.411);
+    color: black;
+  }
+  .grayButton:hover {
+    background-color: rgb(95, 95, 95);
+    color: white;
+  }
+  .randomButton {
+    background: linear-gradient(0.25turn, #53BF9D, #BD4291, #FFC54D);
+  }
+  .randomButton:hover {
+    background: linear-gradient(0.25turn, #CDF0EA, #F6C6EA, #FAF4B7);
+    color: black;
+  }
+  .eraserButton {
+    background-color: rgb(173, 158, 158);
+    color: rgb(0, 0, 0);
+  }
+  .eraserButton:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .resetButton{
+      background-color: brown;
+      
+  }
+  .setButton{
+      background-color: cadetblue;
+  }
+  input {
+    width: 50px;
+  }
+  
+  .mode {
+    margin-bottom: 15px;
+    font-size: large;
+
+  }
+  .error {
+    display: none;
+  }
